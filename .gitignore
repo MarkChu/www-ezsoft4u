@@ -1,0 +1,5 @@
+.superpowers/
+.design-package/
+
+# Claude Code session-local permissions
+.claude/
