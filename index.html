@@ -637,25 +637,12 @@
     display: grid; place-items: center;
     flex-shrink: 0;
   }
-  .qr-placeholder {
-    width: 100%; height: 100%;
-    background:
-      repeating-conic-gradient(#1a1a1a 0% 25%, white 0% 50%) 50% / 14px 14px,
-      white;
-    display: grid; place-items: center;
-    color: #1e3a5f;
-    font-weight: 700;
-    font-size: 0.875rem;
+  .qr-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 4px;
-    position: relative;
-  }
-  .qr-placeholder::after {
-    content: 'QR';
-    position: absolute;
-    background: white;
-    padding: 4px 10px;
-    border-radius: 4px;
-    color: #1e3a5f;
+    display: block;
   }
   .qr-meta .id-line {
     color: white;
@@ -1009,8 +996,8 @@
           <span class="block-label">最快</span>
           <h3>加 LINE 聊聊</h3>
           <div class="qr-row">
-            <div class="qr-box" aria-hidden="true">
-              <div class="qr-placeholder">QR</div>
+            <div class="qr-box">
+              <img src="images/line-qr.png" alt="LINE QR Code（markchu0929）" class="qr-img" width="140" height="140">
             </div>
             <div class="qr-meta">
               <div class="id-line">LINE ID</div>
