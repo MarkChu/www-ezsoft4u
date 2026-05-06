@@ -24,10 +24,12 @@
 <!-- Favicon -->
 <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
 
-<!-- Fonts -->
+<!-- Fonts（非阻塞載入）-->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" /></noscript>
 
 <style>
   /* ===== Reset & Base ===== */
@@ -254,7 +256,7 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #888;
+    color: #666;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -325,7 +327,7 @@
   .footer-bottom {
     margin-top: 24px;
     font-size: 0.8125rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
   }
 </style>
 </head>
