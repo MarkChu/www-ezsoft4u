@@ -180,12 +180,10 @@
     font-weight: 700; font-size: 1.0625rem; color: #1e3a5f;
   }
   .brand-mark {
-    width: 32px; height: 32px;
-    background: linear-gradient(135deg, #1e3a5f 0%, #2c5aa0 100%);
-    border-radius: 6px;
-    display: grid; place-items: center;
-    color: white; font-weight: 700; font-size: 0.95rem;
-    letter-spacing: -0.5px;
+    width: 36px; height: 36px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
   }
   .nav-desktop {
     display: flex; align-items: center; gap: 32px;
@@ -741,7 +739,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#top" class="brand" aria-label="琦翊設計工作室 首頁">
-      <span class="brand-mark" aria-hidden="true">琦</span>
+      <img src="images/logo.svg" alt="" class="brand-mark" aria-hidden="true">
       <span>琦翊設計工作室</span>
     </a>
 
